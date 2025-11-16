@@ -1,8 +1,12 @@
+'use client'
+
 import type { Metadata } from "next";
 import { Schibsted_Grotesk, Martian_Mono } from "next/font/google";
 import "./globals.css";
 import LightRays from "./components/LightRays";
 import Navbar from "./components/Navbar";
+import { useEffect } from "react";
+
 
 
 
@@ -16,16 +20,22 @@ const martian_Mono = Martian_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "DevEvent",
   description: "This Hub  For all Dev Event You mustn't miss   ",
 };
+
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
+
   return (
     <html lang="en">
       <body
@@ -68,8 +78,14 @@ export default function RootLayout({
     
       </div >
 
+    
+
+
       <main>
+       
+        
         {children}
+        
 
       </main>
 

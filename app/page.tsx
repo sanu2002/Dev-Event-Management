@@ -3,8 +3,19 @@ import ExploreBtn from "./components/ExploreBtn";
 import EventCard from "./components/EventCard";
 
 import { events } from "@/lib/constant";
+import posthog from "posthog-js";
+
+
+
 
 export default function Home() {
+
+  //Manual events for posthog 
+
+  posthog.capture('test_event')
+
+
+
   return (
 
     <section>

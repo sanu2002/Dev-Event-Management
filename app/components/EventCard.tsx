@@ -48,14 +48,3 @@ export default EventCard
 
 
 
-interface Props{
-
-    title:string,
-    image:string
-
-
-}
-
-
-
-
